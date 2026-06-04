@@ -1,0 +1,252 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #0b1736;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 70px;
+  border-bottom: 1px solid #e6e8ec;
+}
+
+.logo-container img {
+  height: 140px;
+  width: auto;
+}
+
+nav a {
+  margin-left: 28px;
+  text-decoration: none;
+  color: #0b1736;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hero {
+    position: relative;
+    background: #071a4d;
+    color: white;
+    padding: 90px 90px 100px;
+    overflow: hidden;
+
+}
+
+.hero h1 {
+  font-size: 64px;
+  line-height: 1.05;
+  margin: 0 0 28px;
+  letter-spacing: -0.04em;
+}
+
+.hero p {
+    Trusted by attorneys, investors, family offices, and private clients requiring discreet investigative support.
+  font-size: 22px;
+  line-height: 1.65;
+  max-width: 850px;
+  color: rgba(255,255,255,.8);
+}
+
+.button {
+  display: inline-block;
+  margin-top: 34px;
+  padding: 16px 26px;
+  background: #0b1736;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.services-preview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  padding: 40px 70px 90px;
+}
+
+.card {
+  background: #f4f6f8;
+  padding: 34px;
+  border-radius: 8px;
+  border: 1px solid #e1e5ea;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.card p {
+  color: #526174;
+  line-height: 1.6;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 13px;
+    font-weight: 700;
+    color: #6C7A90;
+    margin-bottom: 24px;
+}
+
+.hero-intro {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #071a4d;
+    max-width: 850px;
+    margin-bottom: 24px;
+}
+
+.hero-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.hero-layout {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-graphic {
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+  .dot-grid {
+    width: 450px;
+    height: 450px;
+
+    background-image:
+      radial-gradient(circle,
+      rgba(255,255,255,.10) 3px,
+      transparent 3px);
+
+    background-size: 42px 42px;
+
+    opacity: .5;
+}
+.page-hero {
+  background: #071a4d;
+  color: white;
+  padding: 110px 70px 90px;
+}
+
+.page-hero h1 {
+  font-size: 56px;
+  line-height: 1.08;
+  max-width: 900px;
+  margin: 0 0 28px;
+  letter-spacing: -0.04em;
+}
+
+.page-hero p {
+  font-size: 22px;
+  line-height: 1.6;
+  max-width: 850px;
+  color: rgba(255,255,255,0.75);
+}
+
+.content-section {
+  padding: 80px 70px;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 0.8fr 1.4fr;
+  gap: 80px;
+}
+
+.content-section h2 {
+  font-size: 36px;
+  margin: 0;
+  color: #071a4d;
+}
+
+.content-section p {
+  font-size: 20px;
+  line-height: 1.7;
+  color: #46546a;
+  margin-top: 0;
+}
+
+.values-grid,
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  padding: 20px 70px 90px;
+}
+
+.capabilities-grid {
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 80px;
+}
+
+.value-card,
+.capability-card {
+  background: #f4f6f8;
+  border: 1px solid #e1e5ea;
+  border-radius: 8px;
+  padding: 34px;
+}
+
+.capability-card span {
+  display: block;
+  color: #6c7a90;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 22px;
+}
+
+.value-card h3,
+.capability-card h2 {
+  margin-top: 0;
+  color: #071a4d;
+}
+
+.value-card p,
+.capability-card p {
+  color: #526174;
+  line-height: 1.65;
+}
+
+.cta-band {
+  margin: 0 70px 90px;
+  padding: 48px;
+  background: #071a4d;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.cta-band h2 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.cta-band .button {
+  background: white;
+  color: #071a4d;
+}
