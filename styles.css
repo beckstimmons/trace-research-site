@@ -19,7 +19,7 @@ header {
 }
 
 .logo-container img {
-  height: 140px;
+  height: 170px;
   width: auto;
 }
 
@@ -229,24 +229,59 @@ nav a {
   line-height: 1.65;
 }
 
-.cta-band {
-  margin: 0 70px 90px;
-  padding: 48px;
-  background: #071a4d;
-  color: white;
-  border-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
+footer {
+    background: #071a4d;
+    color: white;
+    padding: 60px 80px;
+    border-top: 1px solid rgba(255,255,255,.08);
 }
 
-.cta-band h2 {
-  margin: 0;
-  font-size: 32px;
+.footer-content {
+    max-width: 900px;
 }
 
-.cta-band .button {
-  background: white;
-  color: #071a4d;
+.footer-content h3 {
+    margin: 0 0 15px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.footer-content p {
+    color: rgba(255,255,255,.75);
+    line-height: 1.7;
+}
+
+.footer-content a {
+    display: inline-block;
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.copyright {
+    margin-top: 30px;
+    font-size: 14px;
+    opacity: .6;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 40px;
+}
+
+.about-content p {
+  font-size: 20px;
+  line-height: 1.65;
+  color: #0b1736;
+  margin-bottom: 28px;
+}
+
+.about-kicker {
+  font-size: 28px !important;
+  line-height: 1.3 !important;
+  color: #46546a !important;
+  margin-bottom: 36px !important;
 }
