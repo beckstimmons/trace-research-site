@@ -301,3 +301,87 @@ footer {
   color: #46546a !important;
   margin-bottom: 36px !important;
 }
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 24px;
+    gap: 24px;
+  }
+
+  .logo-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .logo-mark {
+    height: 90px;
+  }
+
+  .logo-wordmark {
+    height: 28px;
+  }
+
+  nav {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    margin-left: 0;
+    font-size: 13px;
+  }
+
+  .hero,
+  .page-hero {
+    padding: 70px 24px;
+  }
+
+  .hero h1,
+  .page-hero h1 {
+    font-size: 42px;
+    line-height: 1.08;
+  }
+
+  .hero p,
+  .hero-intro,
+  .page-hero p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .hero-graphic,
+  .dot-grid {
+    display: none;
+  }
+
+  .services-preview,
+  .capabilities-grid,
+  .values-grid {
+    grid-template-columns: 1fr;
+    padding: 40px 24px;
+  }
+
+  .card,
+  .capability-card,
+  .value-card {
+    padding: 28px;
+  }
+
+  .about-content,
+  .content-section {
+    padding: 60px 24px;
+  }
+
+  .two-column {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  footer {
+    padding: 50px 24px;
+  }
+}
