@@ -39,6 +39,32 @@ header {
 }
 }
 
+.animated-wordmark {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.32em;
+  font-size: 42px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.trace-word {
+  color: #071a4d;
+}
+
+.rotating-word {
+  color: #7b8088;
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+.rotating-word.fade-out {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
 nav a {
   margin-left: 28px;
   text-decoration: none;

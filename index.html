@@ -7,13 +7,16 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-
 <body>
 
 <header>
     <div class="logo-container">
 <img src="logo2.jpeg" alt="Trace Research Logo" class="logo-mark">
-<img src="trace logo 3.png" alt="Trace Research" class="logo-wordmark">
+
+<div class="animated-wordmark">
+    <span class="trace-word">TRACE</span>
+    <span class="rotating-word" id="rotatingWord">RESEARCH</span>
+</div>
     </div>
 
     <nav>
@@ -116,5 +119,24 @@
         </p>
     </div>
 </footer>
+<script>
+  const rotatingWord = document.getElementById("rotatingWord");
+  const words = ["RESEARCH", "STRATEGIES", "COMMUNICATIONS"];
+  let index = 0;
+
+  const interval = setInterval(() => {
+    rotatingWord.classList.add("fade-out");
+
+    setTimeout(() => {
+      index++;
+      rotatingWord.textContent = words[index];
+      rotatingWord.classList.remove("fade-out");
+
+      if (index === words.length - 1) {
+        clearInterval(interval);
+      }
+    }, 450);
+  }, 1100);
+</script>
 </body>
 </html>
