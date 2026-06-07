@@ -20,52 +20,24 @@ header {
 }
 
 .logo-container {
-  display: flex;
-  align-items: center;
-}
-
-.brand-link {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .logo-mark {
-  height: 135px;
-  width: auto;
-  display: block;
+    height: 150px;
+    width: auto;
 }
 
-.animated-wordmark {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  font-size: 38px;
-  text-transform: uppercase;
-}
-
-.trace-word {
-  color: #071a4d;
-  font-weight: 700;
-}
-
-.rotating-word {
-  color: #7b8088;
-  font-weight: 500;
-  transition: opacity .45s ease, transform .45s ease;
-}
-
-.rotating-word.fade-out {
-  opacity: 0;
-  transform: translateY(8px);
+.logo-wordmark {
+    height: 95px;
+    width: auto;
 }
 
 nav {
   display: flex;
-  gap: 36px;
+  gap: 18px;
   align-items: center;
 }
 
