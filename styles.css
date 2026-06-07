@@ -40,21 +40,21 @@ header {
 .animated-wordmark {
   display: flex;
   align-items: center;
-  gap: 28px;
-  font-family: Arial, Helvetica, sans-serif;
+  gap: 14px;
   font-weight: 700;
-  letter-spacing: 0.32em;
-  font-size: 40px;
+  letter-spacing: 0.08em;
+  font-size: 38px;
   text-transform: uppercase;
-  white-space: nowrap;
 }
 
 .trace-word {
   color: #071a4d;
+  font-weight: 700;
 }
 
 .rotating-word {
   color: #7b8088;
+  font-weight: 500;
   transition: opacity .45s ease, transform .45s ease;
 }
 
