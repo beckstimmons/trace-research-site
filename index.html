@@ -10,20 +10,22 @@
 <body>
 
 <header>
-    <div class="logo-container">
-<img src="logo2.jpeg" alt="Trace Research Logo" class="logo-mark">
+  <div class="logo-container">
+    <a href="index.html" class="brand-link">
+      <img src="logo2.jpeg" alt="TR Logo" class="logo-mark">
 
-<div class="animated-wordmark">
-    <span class="trace-word">TRACE</span>
-    <span class="rotating-word" id="rotatingWord">RESEARCH</span>
-</div>
-    </div>
+      <div class="animated-wordmark">
+        <span class="trace-word">TRACE</span>
+        <span class="rotating-word" id="rotatingWord">RESEARCH</span>
+      </div>
+    </a>
+  </div>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="about.html">About</a>
-    </nav>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+  </nav>
 </header>
 
 <section class="hero">
@@ -120,23 +122,33 @@
     </div>
 </footer>
 <script>
-  const rotatingWord = document.getElementById("rotatingWord");
-  const words = ["RESEARCH", "STRATEGIES", "COMMUNICATIONS"];
-  let index = 0;
+const rotatingWord = document.getElementById("rotatingWord");
 
-  const interval = setInterval(() => {
-    rotatingWord.classList.add("fade-out");
+const words = [
+  "RESEARCH",
+  "STRATEGY",
+  "COMMUNICATIONS",
+  "RESEARCH"
+];
 
-    setTimeout(() => {
-      index++;
-      rotatingWord.textContent = words[index];
-      rotatingWord.classList.remove("fade-out");
+let index = 0;
 
-      if (index === words.length - 1) {
-        clearInterval(interval);
-      }
-    }, 450);
-  }, 1100);
+const interval = setInterval(() => {
+  rotatingWord.classList.add("fade-out");
+
+  setTimeout(() => {
+    index++;
+
+    rotatingWord.textContent = words[index];
+
+    rotatingWord.classList.remove("fade-out");
+
+    if (index === words.length - 1) {
+      clearInterval(interval);
+    }
+  }, 500);
+
+}, 2000);
 </script>
 </body>
 </html>

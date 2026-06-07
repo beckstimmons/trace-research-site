@@ -14,39 +14,37 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 28px 70px;
+  padding: 35px 70px;
   border-bottom: 1px solid #e6e8ec;
+  background: white;
 }
 
-.logo-container img {
-  height: 170px;
-  width: auto;
+.logo-container {
+  display: flex;
+  align-items: center;
+}
 
-  .logo-container {
-    display: flex;
-    align-items: center;
-    gap: 24px;
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  text-decoration: none;
 }
 
 .logo-mark {
-    height: 110px;
-    width: auto;
-}
-
-.logo-wordmark {
-    height: 42px;
-    width: auto;
-}
+  height: 135px;
+  width: auto;
+  display: block;
 }
 
 .animated-wordmark {
   display: flex;
   align-items: center;
-  gap: 34px;
+  gap: 28px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   letter-spacing: 0.32em;
-  font-size: 42px;
+  font-size: 40px;
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -57,7 +55,7 @@ header {
 
 .rotating-word {
   color: #7b8088;
-  transition: opacity 0.45s ease, transform 0.45s ease;
+  transition: opacity .45s ease, transform .45s ease;
 }
 
 .rotating-word.fade-out {
@@ -65,13 +63,19 @@ header {
   transform: translateY(8px);
 }
 
+nav {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+
 nav a {
-  margin-left: 28px;
+  margin-left: 0;
   text-decoration: none;
-  color: #0b1736;
+  color: #071a4d;
   font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  font-weight: 700;
+  letter-spacing: .06em;
   text-transform: uppercase;
 }
 
@@ -328,86 +332,56 @@ footer {
   margin-bottom: 36px !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   header {
+    padding: 28px 24px;
     flex-direction: column;
     align-items: flex-start;
-    padding: 28px 24px;
     gap: 24px;
   }
 
-  .logo-container {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
+  .brand-link {
+    gap: 16px;
   }
 
   .logo-mark {
     height: 90px;
   }
 
-  .logo-wordmark {
-    height: 28px;
+  .animated-wordmark {
+    font-size: 24px;
+    letter-spacing: 0.22em;
+    gap: 14px;
   }
 
   nav {
-    display: flex;
-    gap: 18px;
+    gap: 22px;
     flex-wrap: wrap;
   }
 
   nav a {
-    margin-left: 0;
     font-size: 13px;
   }
+}
 
-  .hero,
-  .page-hero {
-    padding: 70px 24px;
+@media (max-width: 520px) {
+  .brand-link {
+    align-items: flex-start;
   }
 
-  .hero h1,
-  .page-hero h1 {
-    font-size: 42px;
-    line-height: 1.08;
+  .logo-mark {
+    height: 72px;
   }
 
-  .hero p,
-  .hero-intro,
-  .page-hero p {
-    font-size: 18px;
-    line-height: 1.6;
+  .animated-wordmark {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    font-size: 22px;
+    letter-spacing: 0.18em;
   }
 
-  .hero-graphic,
-  .dot-grid {
-    display: none;
-  }
-
-  .services-preview,
-  .capabilities-grid,
-  .values-grid {
-    grid-template-columns: 1fr;
-    padding: 40px 24px;
-  }
-
-  .card,
-  .capability-card,
-  .value-card {
-    padding: 28px;
-  }
-
-  .about-content,
-  .content-section {
-    padding: 60px 24px;
-  }
-
-  .two-column {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-
-  footer {
-    padding: 50px 24px;
+  header {
+    gap: 20px;
   }
 }
