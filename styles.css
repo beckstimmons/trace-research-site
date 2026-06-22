@@ -68,7 +68,6 @@ nav a {
 }
 
 .hero p {
-    Trusted by attorneys, investors, family offices, and private clients requiring discreet investigative support.
   font-size: 22px;
   line-height: 1.65;
   max-width: 850px;
@@ -303,60 +302,7 @@ footer {
   color: #46546a !important;
   margin-bottom: 36px !important;
 }
-
-@media (max-width: 900px) {
-  header {
-    padding: 28px 24px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-  }
-
-  .brand-link {
-    gap: 16px;
-  }
-
-  .logo-mark {
-    height: 90px;
-  }
-
-  .animated-wordmark {
-    font-size: 24px;
-    letter-spacing: 0.22em;
-    gap: 14px;
-  }
-
-  nav {
-    gap: 22px;
-    flex-wrap: wrap;
-  }
-
-  nav a {
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 520px) {
-  .brand-link {
-    align-items: flex-start;
-  }
-
-  .logo-mark {
-    height: 72px;
-  }
-
-  .animated-wordmark {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-    font-size: 22px;
-    letter-spacing: 0.18em;
-  }
-
-  header {
-    gap: 20px;
-
-    .about-hero {
+.about-hero {
   background: #071a4d;
   color: white;
   padding: 100px 70px 80px;
@@ -369,24 +315,10 @@ footer {
   margin: 0;
 }
 
-.eyebrow {
-  font-size: 12px;
-  letter-spacing: .18em;
-  text-transform: uppercase;
-  margin-bottom: 24px;
-  opacity: .7;
-}
-
-.about-content {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 80px 40px;
-}
-
 .about-lead {
-  font-size: 28px;
-  line-height: 1.5;
-  color: #071a4d;
+  font-size: 28px !important;
+  line-height: 1.5 !important;
+  color: #071a4d !important;
 }
 
 .about-content p {
@@ -418,6 +350,55 @@ footer {
 .about-proof-card p {
   color: #526174;
   line-height: 1.65;
+}
 
+@media (max-width: 900px) {
+  header {
+    padding: 28px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .logo-mark {
+    height: 90px;
+  }
+
+  .logo-wordmark {
+    height: 55px;
+  }
+
+  nav {
+    gap: 22px;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  .about-hero {
+    padding: 70px 24px;
+  }
+
+  .about-hero h1 {
+    font-size: 42px;
+  }
+
+  .about-content {
+    padding: 60px 24px;
+  }
+
+  .about-lead {
+    font-size: 23px !important;
+  }
+
+  .about-proof-grid {
+    grid-template-columns: 1fr;
+    padding: 0 24px 60px;
+  }
+
+  footer {
+    padding: 50px 24px;
   }
 }
