@@ -355,5 +355,69 @@ footer {
 
   header {
     gap: 20px;
+
+    .about-hero {
+  background: #071a4d;
+  color: white;
+  padding: 100px 70px 80px;
+}
+
+.about-hero h1 {
+  font-size: 64px;
+  line-height: 1.05;
+  max-width: 900px;
+  margin: 0;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  opacity: .7;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 40px;
+}
+
+.about-lead {
+  font-size: 28px;
+  line-height: 1.5;
+  color: #071a4d;
+}
+
+.about-content p {
+  font-size: 20px;
+  line-height: 1.75;
+  color: #46546a;
+  margin-bottom: 28px;
+}
+
+.about-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  padding: 0 70px 90px;
+}
+
+.about-proof-card {
+  background: #f4f6f8;
+  border: 1px solid #e1e5ea;
+  border-radius: 8px;
+  padding: 34px;
+}
+
+.about-proof-card h2 {
+  color: #071a4d;
+  margin-top: 0;
+}
+
+.about-proof-card p {
+  color: #526174;
+  line-height: 1.65;
+
   }
 }
